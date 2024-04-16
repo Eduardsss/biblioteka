@@ -17,7 +17,7 @@ if(isset($_GET['id'])) {
         header("Location: index.php");
         exit();
     } else {
-        echo "Error deleting fruit.";
+        echo "Error deleting book.";
         exit();
     }
 } else {
