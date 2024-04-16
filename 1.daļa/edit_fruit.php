@@ -16,7 +16,7 @@ if(isset($_GET['id'])) {
     if($stmt->rowCount() > 0) {
         $fruit = $stmt->fetch(PDO::FETCH_ASSOC);
     } else {
-        echo "Fruit not found.";
+        echo "Book not found.";
         exit();
     }
 } else {
@@ -30,18 +30,18 @@ if(isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Fruit</title>
+    <title>Edit Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Edit Fruit</h1>
+    <h1>Edit Book</h1>
     <form action="edit_fruit_process.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $fruit['id']; ?>">
         
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" value="<?php echo $fruit['name']; ?>" required><br><br>
 
-        <label for="calories">Calories:</label><br>
+        <label for="calories">Cik ir pieejamas:</label><br>
         <input type="number" id="calories" name="calories" value="<?php echo $fruit['calories']; ?>" required><br><br>
 
         <input type="submit" value="Save Changes">
