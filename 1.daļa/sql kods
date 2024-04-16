@@ -4,6 +4,6 @@ fruitsCREATE TABLE fruits (
     calories INT NOT NULL
 );
 
-INSERT INTO fruits (name, calories) VALUES ('apple', 95);
+INSERT INTO fruits (name, calories) VALUES ('Harry Potter', 2);
 
-INSERT INTO fruits (name, calories) VALUES ('banāns', 110);
+INSERT INTO fruits (name, calories) VALUES ('MineKampft', 69);
