@@ -16,7 +16,7 @@ if(isset($_GET['id'])) {
     if($stmt->rowCount() > 0) {
         $fruit = $stmt->fetch(PDO::FETCH_ASSOC);
     } else {
-        echo "Fruit not found.";
+        echo "Book not found.";
         exit();
     }
 } else {
@@ -30,11 +30,11 @@ if(isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Fruit</title>
+    <title>View Books</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>View Fruit</h1>
+    <h1>View Books</h1>
     <div>
         <h2><?php echo $fruit['name']; ?></h2>
         <p>Calories: <?php echo $fruit['calories']; ?></p>
