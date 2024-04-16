@@ -1,0 +1,28 @@
+-- Ievietojam pirmo grāmatu
+INSERT INTO books (title, author, year)
+VALUES ('Dāvana', 'O. Henry', 1905);
+
+-- Ievietojam otro grāmatu
+INSERT INTO books (title, author, year)
+VALUES ('Mežrozīšu ziedi', 'Louisa May Alcott', 1868);
+
+
+
+-- Izveidojam tabulu grāmatām
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    available BOOLEAN DEFAULT TRUE
+);
+
+-- Izveidojam tabulu aizņemšanās datiem
+CREATE TABLE borrowings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    book_id INT NOT NULL,
+    user_id INT NOT NULL,
+    borrow_date DATE NOT NULL,
+    return_date DATE NOT NULL,
+    FOREIGN KEY (book_id) REFERENCES books(id)
+);
