@@ -1,9 +1,0 @@
-fruitsCREATE TABLE fruits (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    calories INT NOT NULL
-);
-
-INSERT INTO fruits (name, calories) VALUES ('Harry Potter', 2);
-
-INSERT INTO fruits (name, calories) VALUES ('MineKampft', 69);
