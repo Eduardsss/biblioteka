@@ -6,7 +6,7 @@ require "./views/components/navbar.php";
             <h1 class="center"> There are no books!</h1>
             <?php } else { ?>
     <h1 class="center"> Books </h1>
-    <table class="zigzag">
+    <table>
         <thead>
             <tr>
                 <th class="header">Name</th>
