@@ -4,7 +4,7 @@ require "views/components/navbar.php";
 ?>
 
 <h1 class="center"> Book </h1>
-    <table class="zigzag">
+    <table>
         <thead>
             <tr>
                 <th class="header">Name</th>
