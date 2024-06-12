@@ -21,17 +21,6 @@ table {
   }
 }
 
-.zigzag {
-  border-collapse: separate;
-  border-spacing: 0.25em 2em;
-  tbody tr:nth-child(odd) {
-    transform: rotate(1.5deg);
-  }
-  thead tr,
-  tbody tr:nth-child(even) {
-    transform: rotate(-1.5deg);
-  }
-}
 
 h1 {
   color: white;
